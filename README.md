@@ -1,7 +1,11 @@
 # projetols
-Projeto LS
 
-Nosso projeto utiliza a API fornecida por The Movie Database(TMDB).
+
+MCenter
+
+Nosso projeto utiliza a API fornecida por <a href="https://www.themoviedb.org/">The Movie Database(TMDB).</a>
+
+
 
 Nossa equipe:
 Lucas Dantas 
