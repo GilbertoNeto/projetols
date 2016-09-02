@@ -18,6 +18,8 @@
 }
 .results img{
   float: left;
+  max-width: 200px;
+  min-height: 180px;
 }
 .innerdiv{
   border-width: 10%;
