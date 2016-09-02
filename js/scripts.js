@@ -107,7 +107,7 @@
                             <img src="${urlImg}${Dados.results[data].poster_path}">
                               <div class="titulo">
                                 <h4>${Dados.results[data].title}</h4>
-                                <p><h4>Sinopse</h4><i>${overviews}</i></p>
+                                <p><h4>Sinopse</h4><i>${overviews} ...</i></p>
                               </div>
                          </div>`
     }
@@ -183,7 +183,7 @@
         overviews = Resultado.results[data].overview.substring(0,100);
          searchResult.innerHTML += `<div class ="col-lg-6 results animated bounceInLeft" ><img src="${ResulImg}">
          <div class="innerdiv animated lightSpeedIn" data-name="${Resultado.results[data].overview}">
-           <p><h4>${Resultado.results[data].name}</h4><i>${overviews}</i></p>
+           <p><h4>${Resultado.results[data].name}</h4><i>${overviews} ...</i></p>
          </div>
          <div class="innerdiv2 animated bounce">
            <h5> <p>${Resultado.results[data].media_type}</p> <b>Tipo de Midia</b></h5>
@@ -193,7 +193,7 @@
         overviews = Resultado.results[data].overview.substring(0,100);
         searchResult.innerHTML += `<div class ="col-lg-6 results animated bounceInLeft" ><img src="${ResulImg}">
         <div class="innerdiv animated lightSpeedIn" data-name="${Resultado.results[data].overview}">
-        <p><h4>${Resultado.results[data].title}</h4><i>${overviews}</i></p>
+        <p><h4>${Resultado.results[data].title}</h4><i>${overviews} ...</i></p>
         </div>
         <div class="innerdiv2 animated bounce">
         <h5> <p>${Resultado.results[data].media_type}</p> <b>Tipo de Midia</b> </h5>
