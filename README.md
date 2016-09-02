@@ -1,7 +1,12 @@
 # projetols
 
+<style>
+ h1{
+  color: grey;
+ }
+</style>
 
-MCenter
+<h1>MCenter</h1>
 
 Nosso projeto utiliza a API fornecida por <a href="https://www.themoviedb.org/">The Movie Database(TMDB).</a>
 
