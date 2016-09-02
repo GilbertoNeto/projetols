@@ -14,6 +14,6 @@ do filme pesquisado.
 
 Para utilizar o projeto é necessário:
 
-Biblioteca do TMDB
-Animate CSS
+<a href="https://github.com/cavestri/themoviedb-javascript-library/">cavestriTMDB</a>
+<a href="https://daneden.github.io/animate.css/">Animated CSS</a>
 
