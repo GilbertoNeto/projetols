@@ -7,7 +7,7 @@ Nosso projeto utiliza a API fornecida por <a href="https://www.themoviedb.org/">
 
 
 
-Nossa equipe:<br>
+<b>Team</b>:<br>
 <ul>
  <li>Lucas Dantas</li>
  <li>Alex Sandro</li>
