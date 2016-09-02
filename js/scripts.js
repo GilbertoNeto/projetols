@@ -172,9 +172,16 @@
     let urlImg = 'http://image.tmdb.org/t/p/w154/';
     searchResult.innerHTML = '';
     for (let data in Resultado.results){
+      //Testar receber imagem fora para verificar se é null
+          if(Resultado.results[data].poster_path == null){
+            ResulImg = "img/ohnao.png";
+          }else {
+            ResulImg = urlImg + Resultado.results[data].poster_path;
+          }
+      //Fim verificação
       if(Resultado.results[data].title == undefined){
         overviews = Resultado.results[data].overview.substring(0,100);
-         searchResult.innerHTML += `<div class ="col-lg-6 results animated bounceInLeft" ><img src="${urlImg}${Resultado.results[data].poster_path}">
+         searchResult.innerHTML += `<div class ="col-lg-6 results animated bounceInLeft" ><img src="${ResulImg}">
          <div class="innerdiv animated lightSpeedIn" data-name="${Resultado.results[data].overview}">
            <p><h4>${Resultado.results[data].name}</h4><i>${overviews}</i></p>
          </div>
@@ -184,7 +191,7 @@
          </div>`
       }else {
         overviews = Resultado.results[data].overview.substring(0,100);
-        searchResult.innerHTML += `<div class ="col-lg-6 results animated bounceInLeft" ><img src="${urlImg}${Resultado.results[data].poster_path}">
+        searchResult.innerHTML += `<div class ="col-lg-6 results animated bounceInLeft" ><img src="${ResulImg}">
         <div class="innerdiv animated lightSpeedIn" data-name="${Resultado.results[data].overview}">
         <p><h4>${Resultado.results[data].title}</h4><i>${overviews}</i></p>
         </div>
@@ -193,6 +200,7 @@
         </div>
         </div>`
       }
+      ResulImg = "";
     }
   }
 /* FIM Criacao do retorno do campo SEARCH */
